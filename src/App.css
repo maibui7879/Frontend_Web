@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .App {
   text-align: center;
 }
@@ -18,7 +19,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin:none;
+  padding:none;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;

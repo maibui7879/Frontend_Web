@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal {
+  position: relative;
+}
+
+button[aria-label="Đóng"] {
+  font-size: 1.5rem; /* Kích thước của biểu tượng */
+  background: none; /* Loại bỏ nền */
+  border: none; /* Loại bỏ viền */
+  cursor: pointer; /* Thay đổi con trỏ thành pointer */
+  position: absolute; /* Vị trí tuyệt đối */
+  top: 0.5rem; /* Khoảng cách từ đỉnh */
+  right: 0.5rem; /* Khoảng cách từ phải */
+  color: #555; /* Màu xám */
+  transition: color 0.2s ease; /* Hiệu ứng chuyển màu */
+}
+
+button[aria-label="Đóng"]:hover {
+  color: #e74c3c; /* Màu đỏ khi hover */
+}
+header h1{
+  text-align:left;
+}
+header {
+  z-index: 1; /* Giá trị thấp hơn so với OrderForm */
+}

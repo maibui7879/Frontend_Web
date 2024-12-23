@@ -1,0 +1,43 @@
+@keyframes slide-next {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-prev {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-next {
+    animation: slide-next 0.7s ease-in-out;
+  }
+  
+  .slide-prev {
+    animation: slide-prev 0.7s ease-in-out;
+  }
+  
+  .news-image-container {
+    transition: transform 0.7s ease-in-out;
+  }
+  .font-fancy1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 700;
+
+    ;
+  }    
+  .font-fancy2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    ;
+  } 

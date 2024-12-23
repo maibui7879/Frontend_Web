@@ -1,0 +1,161 @@
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+label {
+  color: white;
+  font-weight: 500;
+}
+
+.font-fancy {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* React Calendar Styling */
+.react-calendar {
+  color: black;
+  width: 100%;
+  background-color: #e0e0e0; /* Gray background */
+  text-align: center; /* Center content inside the calendar */
+}
+
+.react-calendar__tile {
+  color: black;
+  background-color: white;
+  margin: 2px; /* Add space between tiles */
+  border: 1px solid #e0e0e0; /* Match background color for borders */
+  border-radius: 0; /* No border-radius */
+  padding: 10px;
+  text-align: center; /* Center date text */
+}
+
+.react-calendar__tile--active {
+  background-color: #4CAF50; /* Green background for today */
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background-color: #4CAF50; /* Green background for today */
+  color: white;
+}
+
+.react-calendar__tile--disabled {
+  background-color: #e0e0e0; /* Same as the background for past days */
+  color: #a0a0a0;
+}
+
+.react-calendar__tile:not(.react-calendar__tile--disabled):not(.react-calendar__tile--active) {
+  border: 1px solid #e0e0e0; /* Border color same as background */
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: bold;
+  text-align: center; /* Center weekday names */
+}
+
+/* Abbreviated weekdays (Mon, Tue, Wed, etc.) */
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-transform: uppercase; /* Make weekday names uppercase */
+  font-size: 1rem; /* Adjust font size for abbreviation */
+}
+
+/* Styling for the calendar title */
+/* Styling for the calendar title */
+.react-calendar__navigation__label {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  white-space: nowrap; /* Ensure the title stays on one line */
+  color: black; /* Title color black */
+  font-family: "Playfair Display", serif; /* Use the fancy font */
+  display: inline-block; /* Allow the container to fit the content */
+  padding: 0 10px; /* Optional: add some padding for visual comfort */
+}
+
+/* Styling for the navigation buttons with no icons or background color */
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  width: auto; /* Width based on the icon size */
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 0; /* Ensure no extra space around the icon */
+  text-align: center;
+  padding:auto;
+  margin:auto;
+}
+
+/* Remove any icons from the buttons */
+.react-calendar__navigation__prev-button:before,
+.react-calendar__navigation__next-button:before {
+  content: ''; /* Remove the icons completely */
+}
+
+/* Remove background and color from the buttons */
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button {
+  background: none; /* Remove background */
+  color: black; /* Make sure color is black */
+}
+
+.react-calendar__navigation__prev-button:hover,
+.react-calendar__navigation__next-button:hover {
+  background: none; /* Ensure no background on hover */
+  color: black; /* Keep the color black */
+}
+
+/* Remove << and >> buttons completely */
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__prev2-button {
+  display: none; /* Remove these buttons completely */
+}

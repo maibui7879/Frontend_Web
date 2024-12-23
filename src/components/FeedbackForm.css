@@ -1,0 +1,156 @@
+.sidebar {
+  width: 16.6667%; /* Sidebar width (1/6th of the screen) */
+  background-color: #2d3748; /* Sidebar background */
+  padding: 1.5rem;
+  position: relative; /* Position it relative to the document */
+  min-height: 100%; /* Ensures sidebar covers the full height */
+  height: auto; /* Sidebar will expand if content exceeds viewport */
+  display: flex;
+  flex-direction: column;
+}
+/* FeedbackForm.css */
+
+/* Background image and overlay for the main content */
+.main-content {
+    position: relative;
+    background-color:gray 0.5;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    overflow-y: hidden;
+  }
+.main-content h2{
+    color:white
+}  
+
+  
+  /* Content styling (e.g., form, buttons) */
+  .main-content > * {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the overlay */
+  }
+  
+
+
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    color: #4f9fef;
+  }
+  
+  /* Form Styling */
+  form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align:left;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #4f9fef;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:20%;
+    margin:auto;
+  }
+  
+  form button:hover {
+    background-color: #3a88c7;
+  }
+  
+  form p {
+    font-weight: bold;
+  }
+  
+  /* Success/Error message styling */
+  p.mt-4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  p.text-green-500 {
+    color: #38a169;
+  }
+  
+  p.text-red-500 {
+    color: #e53e3e;
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 20px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar h2 {
+      font-size: 1.25rem;
+    }
+  
+    form {
+      padding: 1.5rem;
+    }
+  }
+  .font-fancy {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: #2c3e50; /* Tông màu tối sang trọng */
+    font-weight: 700;
+  }  
+section{
+  margin-top:none;
+  margin-bottom:none;
+  height:100%
+}
