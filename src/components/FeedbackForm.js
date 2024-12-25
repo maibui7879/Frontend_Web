@@ -60,7 +60,7 @@ const CustomerSupport = () => {
     emailjs
       .send(
         "service_sdcvjvb",
-        "template_sy2cpf5",
+        "template_it2mg1k",
         {
           name: formData.name,
           email: formData.email,
