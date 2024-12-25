@@ -90,7 +90,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="homepage mb-none py-none mt-2">
+    <div className="homepage mb-none py-none">
       {/* Banner Slider */}
       <div className="banner-slider mb-none mt-2"               
         data-aos="fade-up"
