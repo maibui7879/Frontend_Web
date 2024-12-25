@@ -61,7 +61,7 @@ const Footer = ({ toggleAdminMode, isAdmin }) => {
             <p>Email: maibui7879@gmail.com</p>
             <p>
               Website:
-              <a href="http://localhost:3000" className="text-blue-400">
+              <a href="https://cheo-beo-quan.onrender.com/" className="text-blue-400">
                 www.cheobeo.vn
               </a>
             </p>
